@@ -42,7 +42,7 @@ const FetchData = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/alert-data')
+    fetch('https://project-voilence.onrender.com/api/alert-data')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch data');
